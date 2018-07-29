@@ -1,11 +1,21 @@
+div {
+    height: 50px;
+    border: 1px solid red;
+}
+
 .col-1 {
 float: left;
 width: 8.33333333%;
 }
+.row:before {
+    display: table;
+    content:  "";
+}
 
-div {
-    height: 50px;
-    border: 1px solid red;
+.row:after {
+    display:table;
+    content: "";
+    clear: both;
 }
 
 * {
